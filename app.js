@@ -8,6 +8,6 @@ const path = require("path");
 // 4_definir ruta estatita para express sepa donde ir a buscar.
 app.use(express.static("public"));
 // 5_Definir la escucha del servidor
-app.listen(8000,console.log("Iniciando el Servidor Web en el puerto 8000"))
+app.listen(8000,()=>console.log(`http://localhost:8000`))
 // 6_require y response con get. rutas de archivos
 app.get("/",(req,res)=>{res.sendFile(path.resolve(__dirname,"views/home.html")) })
