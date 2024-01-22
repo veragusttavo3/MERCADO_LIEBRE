@@ -37,8 +37,10 @@
 .home header{
     background-color: var(--amarillo);
     }
-.home header img{width: 44%;margin: 8% 74px 0px 11%;}
-.home header .caja{margin: 4% 5%;}
+.home header img{
+    width: 44%;margin: 8% 74px 0px 11%;}
+.home header .caja{
+    margin: 4% 5%;}
 
 .home header .caja form{
 }
@@ -69,7 +71,11 @@
     text-decoration: none;
     color: black;
 }
-.home header .burger-menu{display: flex;justify-content: center;align-items: center;padding: 0;}
+.home header .burger-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;}
 .home header .burger-menu .fa-bars{
     background-color: var(--celeste);
     color: var(
@@ -82,7 +88,10 @@
 
 /* main */
 
-.home main{}
+.home main{
+    width: 90vw;
+    margin: 0 auto;
+}
 .home main section{}
 .home main section h2{
     font-size: var(--titulares);
@@ -110,7 +119,8 @@
 
 .home footer{
 }
-.home footer section{text-align: center;}
+.home footer section{
+    text-align: center;}
 .home footer section h2{
     font-size: 12px;
     text-align: center;
@@ -131,4 +141,11 @@
 .home footer section article p{
     text-align: center;
     font-size: var(--cuerposDeTexto);
+}
+
+@media(min-width: 361 ){
+
+}
+@media(min-width: 769){
+
 }
