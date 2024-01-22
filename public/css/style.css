@@ -92,13 +92,18 @@
     width: 90vw;
     margin: 0 auto;
 }
-.home main section{}
+.home main section{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
 .home main section h2{
     font-size: var(--titulares);
     text-align: center;
     padding: 4%;
 }
-.home main section article{}
+.home main section article{
+}
 .home main section article img{
     width: 87%;
 }
