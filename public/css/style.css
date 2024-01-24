@@ -99,23 +99,38 @@
 }
 .home main section h2{
     font-size: var(--titulares);
-    text-align: center;
-    padding: 4%;
+    text-align: left;
 }
-.home main section article{
-}
+.home main section article{}
 .home main section article img{
-    width: 87%;
+    width: 100%;
 }
-.home main section article h3.precio{
+
+/* Caja div de la info del articulo */
+
+.home main section article .caja{
+}
+.home main section article .caja div{
+    display: inline-block;
+    border: 2px solid var(--verde);
+    width: 52px;
+    height: 52px;
+    border-radius: 35px;
+}
+.home main section article .caja div i{color: var(--verde);font-size: 18px;margin: 1px;}
+.home main section article .caja span{
+    display: block;}
+.home main section article .caja .precio{
     font-size: var(--titulares);
-    color: var(--verde);
+    /* color: ; */
 }
-.home main section article h3.descuento{
+.home main section article .caja .descuento{
     font-size: var(--descuentos);
     font-weight: 400;
+    color: var(--verde);
 }
-.home main section article h3.descripciones{
+.home main section article .caja .descripciones{
+    display: none;
     font-size: var(--descripciones);
     font-weight: bold;
 }
@@ -147,6 +162,7 @@
     text-align: center;
     font-size: var(--cuerposDeTexto);
 }
+
 
 @media(min-width: 361 ){
 
