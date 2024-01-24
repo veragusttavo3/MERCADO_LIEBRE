@@ -109,6 +109,7 @@
 /* Caja div de la info del articulo */
 
 .home main section article .caja{
+    border-top: 1px solid var(--grisClaro);
 }
 .home main section article .caja div{
     display: inline-block;
@@ -117,7 +118,7 @@
     height: 52px;
     border-radius: 35px;
 }
-.home main section article .caja div i{color: var(--verde);font-size: 18px;margin: 1px;}
+.home main section article .caja div i{color: var(--verde);font-size: 18px;margin: 7px;}
 .home main section article .caja span{
     display: block;}
 .home main section article .caja .precio{
