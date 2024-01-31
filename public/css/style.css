@@ -1,85 +1,101 @@
-:root{
-/* Paleta de colores*/
---amarillo: #EAC926;
---azul: #03264C;
---celeste: #1259c3;
---grisOscuro: #666;
---grisClaro: #ebebeb;
---verde: #39b54a;
+:root {
+    /* Paleta de colores*/
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
 
-/* tipografías */
---font-Roboto: 'Roboto', sans-serif;
+    /* tipografías */
+    --font-Roboto: 'Roboto', sans-serif;
 
-/* Tamaños Tipográficos */
---cuerposDeTexto: 12px;
---titulares: 24px;
---precios: 18px;
---descuentos: 16px;
---descripciones: 16px;
+    /* Tamaños Tipográficos */
+    --cuerposDeTexto: 12px;
+    --titulares: 24px;
+    --precios: 18px;
+    --descuentos: 16px;
+    --descripciones: 16px;
 }
 
 /* General */
 
-*{
+* {
     font-family: var(--font-Roboto);
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 /* body */
 
-.home{
+.home {
+    background-color: var(--grisClaro);
 }
 
 /* Header */
 
-.home header{
+.home header {
     background-color: var(--amarillo);
-    }
-.home header img{
-    width: 44%;margin: 8% 74px 0px 11%;}
-.home header .caja{
-    margin: 4% 5%;}
-
-.home header .caja form{
 }
-.home header .caja form input{
+
+.home header img {
+    width: 44%;
+    margin: 8% 74px 0px 11%;
+}
+
+.home header .caja {
+    margin: 4% 5%;
+}
+
+.home header .caja form {}
+
+.home header .caja form input {
     border: 1px solid var(--grisOscuro);
 }
-.home header .caja i{
+
+.home header .caja i {
     background: white;
     border: 1px solid var(--grisOscuro);
     margin-top: 1px;
     border-radius: 2px;
 }
-.home header .market{
+
+.home header .market {
     font-size: 13px;
 }
-.home header .market p{
-}
-.home header .market p i{
+
+.home header .market p {}
+
+.home header .market p i {
     margin: 0% 0% 0% 12%;
 }
-.home header nav{
+
+.home header nav {
+    display: none;
     padding-top: 10px;
     padding-bottom: 15px;
 }
-.home header nav ul{}
-.home header nav ul li{}
-.home header nav ul li a{
+
+.home header nav ul {}
+
+.home header nav ul li {}
+
+.home header nav ul li a {
     text-decoration: none;
     color: black;
 }
-.home header .burger-menu{
+
+.home header .burger-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;}
-.home header .burger-menu .fa-bars{
+    padding: 0;
+}
+
+.home header .burger-menu .fa-bars {
     background-color: var(--celeste);
-    color: var(
-    --grisClaro);
+    color: var(--grisClaro);
     padding: 10px;
     font-size: 24px;
     border-radius: 5px;
@@ -88,49 +104,66 @@
 
 /* main */
 
-.home main{
+.home main {
     width: 90vw;
     margin: 0 auto;
 }
-.home main section{
+
+.home main section {
     display: flex;
     gap: 10px;
     flex-direction: column;
 }
-.home main section h2{
+
+.home main section h2 {
     font-size: var(--titulares);
     text-align: left;
 }
-.home main section article{}
-.home main section article img{
+
+.home main section article {}
+
+.home main section article img {
     width: 100%;
 }
 
 /* Caja div de la info del articulo */
 
-.home main section article .caja{
+.home main section article .caja {
     border-top: 1px solid var(--grisClaro);
+    padding: 15px;
+    background-color: snow;
 }
-.home main section article .caja div{
+
+.home main section article .caja div {
     display: inline-block;
     border: 2px solid var(--verde);
     width: 52px;
     height: 52px;
     border-radius: 35px;
 }
-.home main section article .caja div i{color: var(--verde);font-size: 18px;margin: 7px;}
-.home main section article .caja span{
-    display: block;}
-.home main section article .caja .precio{
+
+.home main section article .caja div i {
+    color: var(--verde);
+    font-size: 18px;
+    margin: 7px;
+}
+
+.home main section article .caja span {
+    display: block;
+}
+
+.home main section article .caja .precio {
     font-size: var(--titulares);
     /* color: ; */
 }
-.home main section article .caja .descuento{
+
+.home main section article .caja .descuento {
     font-size: var(--descuentos);
     font-weight: 400;
     color: var(--verde);
 }
-.home main section article .caja .descripciones{
+
+.home main section article .caja .descripciones {
     display: none;
     font-size: var(--descripciones);
     font-weight: bold;
@@ -138,36 +171,43 @@
 
 /* Footer */
 
-.home footer{
+.home footer {}
+
+.home footer section {
+    text-align: center;
 }
-.home footer section{
-    text-align: center;}
-.home footer section h2{
+
+.home footer section h2 {
     font-size: 12px;
     text-align: center;
     margin: 9px;
 }
-.home footer section h2.noMostrar{
+
+.home footer section h2.noMostrar {
     display: none;
 }
-.home footer section article{
+
+.home footer section article {
     margin: 13% 29px;
 }
-.home footer section article i{
+
+.home footer section article i {
     font-size: 2em;
     margin-bottom: 10px;
     color: var(--celeste);
 }
-.home footer section article h3{}
-.home footer section article p{
+
+.home footer section article h3 {}
+
+.home footer section article p {
     text-align: center;
     font-size: var(--cuerposDeTexto);
 }
 
+/* register */
 
-@media(min-width: 361 ){
+/* login */
 
-}
-@media(min-width: 769){
+@media(min-width: 361) {}
 
-}
+@media(min-width: 769) {}
