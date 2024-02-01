@@ -45,7 +45,9 @@
 }
 
 .home header .caja {
+    display: flex;
     margin: 4% 5%;
+    gap: 1%;
 }
 
 .home header .caja form {}
@@ -237,6 +239,8 @@
 
 /* media query Desktop */
 @media(min-width:769px) {
+    .home header .caja{
+    }
     .home header .market p {
         text-align: center;
     }
