@@ -36,34 +36,55 @@
 /* Header */
 
 .home header {
+    display: flex;
     background-color: var(--amarillo);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.home header img.logo{
-    width: 44%;
-    margin: 8% 74px 0px 11%;
+.home header .logo {
+    width: 50%;
+    padding: 2% 3% 0% 5%;
+}
+.home header .logo img{
+    margin-top: 10%;
 }
 
 .home header .caja {
     display: flex;
-    margin: 4% 5%;
-    gap: 1%;
+    width: 50%;
+    7px;
+    margin-top: 5%;
 }
 
-.home header .caja form {}
+.home header .caja form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 42px;
+}
 
 .home header .caja form input {
-    border:1px solid var(--grisOscuro);
+    display: flex;
+    border: none;
+    width: 89%;
+    height: 100%;
+    border-radius: 7px;
 }
 
-.home header .caja i {
+.home header .caja form i {
     background: white;
-    border: 1px solid var(--grisOscuro);
-    margin-top: 1px;
-    border-radius: 2px;
+    padding: 1%;
+    border-radius: 18%;
+    position: absolute;
+    right: 7%;
 }
 
 .home header .market {
+    width: 100%;
+    margin: 5% 0% 4% 0%;
     font-size: 13px;
 }
 
@@ -93,6 +114,7 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+    margin-bottom: 5%;
 }
 
 .home header .burger-menu .fa-bars {
