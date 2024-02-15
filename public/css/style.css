@@ -109,6 +109,8 @@
 .home header .banner{
 }
 .home header .banner img{display: flex;width: 100%;}
+
+
 /* main */
 
 .home main {
@@ -119,13 +121,17 @@
 .home main section {
     display: flex;
     gap: 10px;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
-.home main section h2 {
+.home main h2{
     font-size: var(--titulares);
     text-align: left;
     margin: 4% 3% 4% 0%;
+}
+
+.home main section h2.noMostrar{
+   display:none;
 }
 
 .home main section article {}
@@ -138,33 +144,41 @@
 
 .home main section article .caja {
     border-top: 1px solid var(--grisClaro);
-    padding: 15px;
     background-color: snow;
 }
 
 .home main section article .caja div {
-    display: inline-block;
     border: 2px solid var(--verde);
-    width: 52px;
-    height: 52px;
+    width: 30px;
+    height: 30px;
     border-radius: 35px;
+    background-color: snow;
+    position: relative;
+    top: -17px;
+    left: 88%;
 }
 
 .home main section article .caja div i {
     color: var(--verde);
-    font-size: 18px;
-    margin: 7px;
+    font-size: 14px;
+    padding: 6px 5px;
 }
 
-.home main section article .caja span {
-}
+
+
+.home main section article .caja span{}
+
 
 .home main section article .caja .precio {
-    font-size: var(--titulares);
+    display: inline-block;
+    width: 30%;
+    padding: 0% 0% 3% 5%;
+    font-size: var(--precios);
     /* color: ; */
 }
 
 .home main section article .caja .descuento {
+    display: inline-block;
     font-size: var(--descuentos);
     font-weight: 400;
     color: var(--verde);
@@ -228,12 +242,17 @@
     }
 
     .home main section article {
-        box-shadow: 0px 0px 10px rgba(100, 100, 100, 1);
+                 10px rgba(100, 100, 100, 1);
+                 place-self: flex-start;
+                 width: 45%;
     }
 
     .home main section article .caja .descripciones {
         display: block;
+        padding: 2% 5% 3%;
     }
+    .home main section{
+}
 }
 
 /* media query Desktop */
