@@ -41,58 +41,57 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-
-.home header .logo {
+.home header .lazaP{
     display: flex;
-    width: 50vw;
-    padding: 5% 4% 1% 9%;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 12px;
 }
-.home header .logo img{
+.home header .lazaP .logo {
+    display: flex;
+    width: 50%;
+    padding: 12px;
+}
+.home header .lazaP .logo img{
     width: 100%;
 }
 
-.home header .caja {
+.home header .lazaP .caja {
     display: flex;
-    width: 50vw;
-    margin-top: 5%;
+    width: 50%;
+    align-items: center;
 }
 
-.home header .caja form {
+.home header .lazaP .caja form {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    height: 36px;
-    padding: 4px;
 }
 
-.home header .caja form input {
-    display: flex;
+.home header .lazaP .caja form input {
     border: none;
-    width: 80%;
-    height: 100%;
-    border-radius: 7px;
+    x;
+    border-radius: 5px 0px 0px 5px;
+    width: 76%;
 }
 
 .home header .caja form i {
     background: white;
-    padding: 1%;
-    border-radius: 18%;
-    position: absolute;
-    right: 12%;
+    padding: 6px;
+    te; */
+;
+    border-radius: 0px 5px 5px 0px;
 }
 
-.home header .market {
+.home header .lazaP .market {
     width: 100%;
     margin: 5% 0% 4% 0%;
     font-size: 13px;
 }
 
-.home header .market p {}
-
-.home header .market p i {
-    margin: 0% 0% 0% 12%;
+.home header .lazaP .market p {
+    text-align: center;
 }
+
+.home header .lazaP .market p i {}
 
 .home header nav {
     display: none;
@@ -165,7 +164,7 @@
 /* Caja div de la info del articulo */
 
 .home main section article .caja {
-    border-top: 1px solid var(--grisClaro);
+    border-top: px solid var(--grisClaro);
     background-color: snow;
 }
 
@@ -257,8 +256,9 @@
 @media(min-width: 361px) {
     .home header nav {
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        font-size: 10px;
+        width: 100%;
+        justify-content: space-around;
     }
 
     .home header .burger-menu .fa-bars {
@@ -275,9 +275,30 @@
         display: block;
         padding: 2% 5% 3%;
     }
+    .home header .lazaP .logo{
+    width: 30%;
+    padding: 0;
+    }
+    .home header .lazaP .caja{
+    padding: 0;
+    width: 32%;
+    }
+    .home header .lazaP .caja form input{
+    padding: 0px;
+}
+.home header .lazaP .market {
+    font-size: 7px;
+    width: 37%;
+}
+    .home header .lazaP .caja form{}
+    .home header .lazaP .market p{font-size: 6px;}
     .home main section{
 }
-.home main section article .caja div {left: 24%;}
+.home header .caja form i{
+    padding: 0;
+}
+.home main section article .caja div {
+}
 
 /* media query Desktop */
 @media(min-width:769px) {
