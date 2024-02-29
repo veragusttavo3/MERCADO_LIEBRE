@@ -36,80 +36,59 @@
     font-size: var(--cuerposDeTexto);
 }
 @media(min-width: 361px) {
-    .home header nav {
-        display: flex;
-        font-size: 10px;
-        width: 100%;
-        gap: 30vw;
-        justify-content: space-around;
-    }
+    /* Footer */
 
-    .home header .burger-menu .fa-bars {
-        display: none;
-    }
-
-    .home main section article {
-        box-shadow: 0px 0px 10px rgba(100, 100, 100, 1);
-        place-self: flex-start;
-        width: 40vw;
-    }
-
-    .home main section article .caja .descripciones {
-        display: block;
-        padding: 2% 5% 3%;
-    }
-
-    .home header .lazaP .logo {
-        width: 33vw;
-        padding: 0;
-    }
-
-    .home header .lazaP .caja {
-        padding: 0;
-        width: 25vw;
-    }
-
-    .home header .lazaP .caja form input {}
-
-    .home header .lazaP .market {
-        padding: 0;
-        width: 32vw;
-    }
-
-    .home header .lazaP .caja form {}
-
-    .home header .lazaP .market p {}
-
-    .home main section {}
-
-    .home header .caja form i {
-        margin-left: 2px;
-        padding: 1px;
-    }
-
-    .home main section article .caja div {}
-
-    .home main h2 {}
-
-    .home header nav ul li {}
-
-    .home header nav ul li a {}
+.home footer {
 }
+
+.home footer section {
+   
+}
+
+.home footer section h2 {
+ 
+}
+
+.home footer section h2.noMostrar {
+   
+}
+
+.home footer section article {
+  
+}
+
+.home footer section article i {
+    
+}
+
+}
+
 
 /* media query Desktop */
 @media(min-width:769px) {
-    .home header .caja {}
+/* Footer */
 
-    .home header .market p {
-        text-align: center;
-    }
+.home footer {
+}
 
-    .home main section article {
-        width: 21vw;
-        height: 40vh;
-    }
+.home footer section {
+   
+}
 
-    .home main section article .caja {
-        height: 38%;
-    }
+.home footer section h2 {
+ 
+}
+
+.home footer section h2.noMostrar {
+   
+}
+
+.home footer section article {
+  
+}
+
+.home footer section article i {
+    
+}
+
 }
