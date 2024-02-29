@@ -1,0 +1,36 @@
+/*main login y register */
+.mainRegister{
+}
+.mainRegister div{
+    width: 63%;
+    background-color:var(--grisClaro);
+}
+.mainRegister div form{}
+.mainRegister div form div{
+    margin: 9% 0 0px 46%;
+    }
+
+.mainRegister div form div button{
+    background-color: var(--celeste);
+    color: var(--grisClaro);
+    border-radius: 5px;
+    border: none;
+    width: 17vw;
+    height: 2rem;
+    margin-top: 23px;
+    margin-bottom: 37px;
+}
+.mainRegister  form div label.data{
+    display: block;width: 100%;
+    padding-bottom: 15px;}
+.mainRegister form div input{
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+}
+@media(min-width: 361px) {
+}
+
+/* media query Desktop */
+@media(min-width:769px) {
+}

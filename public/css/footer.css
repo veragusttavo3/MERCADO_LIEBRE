@@ -1,30 +1,40 @@
-@import "./header.css";
-@import "./footer.css";
-@import "./general.css";
-@import "./home.css";
-@import "./login.css";
-@import "./register.css";
+/* Footer */
 
-:root {
-    /* Paleta de colores*/
-    --amarillo: #EAC926;
-    --azul: #03264C;
-    --celeste: #1259c3;
-    --grisOscuro: #666;
-    --grisClaro: #ebebeb;
-    --verde: #39b54a;
-
-    /* tipografías */
-    --font-Roboto: 'Roboto', sans-serif;
-
-    /* Tamaños Tipográficos */
-    --cuerposDeTexto: 12px;
-    --titulares: 24px;
-    --precios: 18px;
-    --descuentos: 16px;
-    --descripciones: 16px;
+.home footer {
+    background-color: white;
+    padding-top: 5px;
 }
-/* media query Tablet */
+
+.home footer section {
+    text-align: center;
+}
+
+.home footer section h2 {
+    font-size: 12px;
+    text-align: center;
+    margin: 9px;
+}
+
+.home footer section h2.noMostrar {
+    display: none;
+}
+
+.home footer section article {
+    margin: 13% 29px;
+}
+
+.home footer section article i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--celeste);
+}
+
+.home footer section article h3 {}
+
+.home footer section article p {
+    text-align: center;
+    font-size: var(--cuerposDeTexto);
+}
 @media(min-width: 361px) {
     .home header nav {
         display: flex;

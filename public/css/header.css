@@ -1,0 +1,190 @@
+/* Header */
+
+.home header {
+    display: flex;
+    background-color: var(--amarillo);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home header .lazaP {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 11px;
+    justify-content: space-around;
+}
+
+.home header .lazaP .logo {
+    display: flex;
+    width: 50%;
+    padding: 12px;
+}
+
+.home header .lazaP .logo img {
+    width: 100%;
+}
+
+.home header .lazaP .caja {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.home header .lazaP .caja form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home header .lazaP .caja form input {
+    border: none;
+
+    border-radius: 5px 0px 0px 5px;
+    width: 76%;
+}
+
+.home header .caja form i {
+    background: white;
+    padding: 6px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.home header .lazaP .market {
+    width: 100%;
+    margin: 5% 0% 4% 0%;
+    font-size: 12px;
+}
+
+.home header .lazaP .market p {
+    text-align: center;
+}
+
+.home header .lazaP .market p i {}
+
+.home header nav {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.home header nav ul {
+    display: block;
+    display: flex;
+    gap: 20px;
+}
+
+.home header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.home header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.home header .burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 5%;
+}
+
+.home header .burger-menu .fa-bars {
+    background-color: var(--celeste);
+    color: var(--grisClaro);
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    margin: 8%;
+}
+
+
+
+.home header .banner {}
+
+.home header .banner img {
+    display: flex;
+    width: 100%;
+}
+@media(min-width: 361px) {
+    .home header nav {
+        display: flex;
+        font-size: 10px;
+        width: 100%;
+        gap: 30vw;
+        justify-content: space-around;
+    }
+
+    .home header .burger-menu .fa-bars {
+        display: none;
+    }
+
+    .home main section article {
+        box-shadow: 0px 0px 10px rgba(100, 100, 100, 1);
+        place-self: flex-start;
+        width: 40vw;
+    }
+
+    .home main section article .caja .descripciones {
+        display: block;
+        padding: 2% 5% 3%;
+    }
+
+    .home header .lazaP .logo {
+        width: 33vw;
+        padding: 0;
+    }
+
+    .home header .lazaP .caja {
+        padding: 0;
+        width: 25vw;
+    }
+
+    .home header .lazaP .caja form input {}
+
+    .home header .lazaP .market {
+        padding: 0;
+        width: 32vw;
+    }
+
+    .home header .lazaP .caja form {}
+
+    .home header .lazaP .market p {}
+
+    .home main section {}
+
+    .home header .caja form i {
+        margin-left: 2px;
+        padding: 1px;
+    }
+
+    .home main section article .caja div {}
+
+    .home main h2 {}
+
+    .home header nav ul li {}
+
+    .home header nav ul li a {}
+}
+
+/* media query Desktop */
+@media(min-width:769px) {
+    .home header .caja {}
+
+    .home header .market p {
+        text-align: center;
+    }
+
+    .home main section article {
+        width: 21vw;
+        height: 40vh;
+    }
+
+    .home main section article .caja {
+        height: 38%;
+    }
+}

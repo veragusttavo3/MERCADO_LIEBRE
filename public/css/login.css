@@ -1,30 +1,38 @@
-@import "./header.css";
-@import "./footer.css";
-@import "./general.css";
-@import "./home.css";
-@import "./login.css";
-@import "./register.css";
-
-:root {
-    /* Paleta de colores*/
-    --amarillo: #EAC926;
-    --azul: #03264C;
-    --celeste: #1259c3;
-    --grisOscuro: #666;
-    --grisClaro: #ebebeb;
-    --verde: #39b54a;
-
-    /* tipografías */
-    --font-Roboto: 'Roboto', sans-serif;
-
-    /* Tamaños Tipográficos */
-    --cuerposDeTexto: 12px;
-    --titulares: 24px;
-    --precios: 18px;
-    --descuentos: 16px;
-    --descripciones: 16px;
+.mainLogin{
+    display: flex;
+    justify-content: center;
+    height: 100vw;
 }
-/* media query Tablet */
+
+.mainLogin form{}
+.mainLogin form div{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+.mainLogin form div input{
+    border: none;
+    width: 60vw;
+    height: 36px;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+.mainLogin form div input,
+.mainRegister form div input::placeholder {
+    padding-left: 10px;
+}
+
+.mainLogin form div button{
+    background-color: var(--celeste);
+    color: var(--grisClaro);
+    border-radius: 5px;
+    border: none;
+    width: 60vw;
+    height: 2rem;
+    margin-top: 23px;
+    margin-bottom: 37px;
+}
 @media(min-width: 361px) {
     .home header nav {
         display: flex;

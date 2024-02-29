@@ -1,30 +1,84 @@
-@import "./header.css";
-@import "./footer.css";
-@import "./general.css";
-@import "./home.css";
-@import "./login.css";
-@import "./register.css";
+/* main home*/
 
-:root {
-    /* Paleta de colores*/
-    --amarillo: #EAC926;
-    --azul: #03264C;
-    --celeste: #1259c3;
-    --grisOscuro: #666;
-    --grisClaro: #ebebeb;
-    --verde: #39b54a;
-
-    /* tipografías */
-    --font-Roboto: 'Roboto', sans-serif;
-
-    /* Tamaños Tipográficos */
-    --cuerposDeTexto: 12px;
-    --titulares: 24px;
-    --precios: 18px;
-    --descuentos: 16px;
-    --descripciones: 16px;
+.home main {
+    width: 90vw;
+    margin: 0 auto;
 }
-/* media query Tablet */
+
+.home main section {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home main h2 {
+    font-size: var(--titulares);
+    text-align: left;
+    margin: 4% 4% 5% 4%;
+}
+
+.home main section h2.noMostrar {
+    display: none;
+}
+
+.home main section article {}
+
+.home main section article img {
+    width: 100%;
+}
+
+/* Caja div de la info del articulo */
+
+.home main section article .caja {
+    border-top: px solid var(--grisClaro);
+    background-color: snow;
+}
+
+.home main section article .caja div {
+    border: 2px solid var(--verde);
+    width: 30px;
+    height: 30px;
+    border-radius: 35px;
+    background-color: snow;
+    position: relative;
+    top: -16px;
+    left: 88%;
+}
+
+.home main section article .caja div i {
+    color: var(--verde);
+    font-size: 14px;
+    padding: 6px 5px;
+}
+
+
+
+.home main section article .caja span {}
+
+
+.home main section article .caja .precio {
+    display: inline-block;
+    width: 30%;
+    padding: 0% 0% 3% 5%;
+    font-size: var(--precios);
+    /* color: ; */
+}
+
+.home main section article .caja .descuento {
+    display: inline-block;
+    font-size: var(--descuentos);
+    font-weight: 400;
+    color: var(--verde);
+}
+
+.home main section article .caja .descripciones {
+
+    display: block;
+    font-size: var(--descripciones);
+    font-weight: bold;
+    display: none;
+}
 @media(min-width: 361px) {
     .home header nav {
         display: flex;
